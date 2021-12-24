@@ -1,0 +1,86 @@
+# 行列の数
+GET http://localhost:3001/api/v1/matrix/
+
+###
+POST http://localhost:3001/api/v1/matrix/
+Content-Type: application/json
+
+{
+  "lines": 3
+}
+
+###
+PUT http://localhost:3001/api/v1/matrix/5e6b01f93cfc485fe87821e9
+Content-Type: application/json
+
+{
+  "lines" : 4
+}
+
+###
+DELETE http://localhost:3001/api/v1/matrix/5e6acf26e2af5434f0dcafe5
+
+
+
+
+
+# 背景色
+###
+GET http://localhost:3001/api/v1/backColor/
+
+###
+POST http://localhost:3001/api/v1/backColor/
+Content-Type: application/json
+
+{
+  "color": "white"
+}
+
+###
+PUT http://localhost:3001/api/v1/backColor/5e6af69694aa394c23cbc022
+Content-Type: application/json
+
+{
+  "color" : "back-orange"
+}
+
+###
+DELETE http://localhost:3001/api/v1/backColor/5e6af69694aa394c23cbc022
+
+
+
+
+
+# ユーザーズ
+###
+GET http://localhost:3001/api/v1/user/
+
+
+# ユーザー1
+###
+GET http://localhost:3001/api/v1/user/5e6aca78975a093166926f36
+
+###
+PUT http://localhost:3001/api/v1/user/5e6aca78975a093166926f36
+Content-Type: application/json
+
+{
+  "shape" : "○",
+  "color" : "yellow"
+}
+
+
+
+
+# ユーザー2
+###
+GET http://localhost:3001/api/v1/user/5e6afa98bd89874f353f8c5c
+
+###
+PUT http://localhost:3001/api/v1/user/5e6afa98bd89874f353f8c5c
+Content-Type: application/json
+
+{
+  "shape" : "♡",
+  "color" : "blue"
+}
